@@ -86,6 +86,7 @@ class FooderlichTheme {
   static ThemeData dark() {
     return ThemeData(
       brightness: Brightness.dark,
+      // checkBoxTheme is missing?
       appBarTheme: AppBarTheme(
         foregroundColor: Colors.white,
         backgroundColor: Colors.grey[900],
