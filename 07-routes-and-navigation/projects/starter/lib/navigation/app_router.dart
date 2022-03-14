@@ -30,7 +30,9 @@ class AppRouter extends RouterDelegate
     return Navigator(
       key: navigatorKey,
       pages: [
-        if (!appStateManager.isInitialized) SplashScreen.page(),
+        // EmptyScreen.page(),
+        // if (!appStateManager.isInitialized)
+        SplashScreen.page(),
         if (appStateManager.isInitialized && !appStateManager.isLoggedIn)
           LoginScreen.page(),
         if (appStateManager.isLoggedIn && !appStateManager.isOnboardingComplete)
